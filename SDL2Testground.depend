@@ -584,7 +584,7 @@
 1431735316 /home/turupawn/Clases/Progra3/SDL2TestSimple-master/Jugador.h
 	"Personaje.h"
 
-1432249566 source:/home/ricardo/Documentos/Progra3/Shooter-master/main.cpp
+1432338278 source:/home/ricardo/Documentos/Progra3/Shooter-master/main.cpp
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<iostream>
@@ -596,6 +596,7 @@
 	"Enemigo3.h"
 	"Enemigo4.h"
 	"Enemigo5.h"
+	<SDL2/SDL_mixer.h>
 
 1431739289 /home/ricardo/Documentos/Progra3/Shooter-master/Jugador.h
 	"Personaje.h"
@@ -616,19 +617,19 @@
 1431739289 source:/home/ricardo/Documentos/Progra3/Shooter-master/Personaje.cpp
 	"Personaje.h"
 
-1432265916 source:/home/ricardo/Documentos/Progra3/Shooter-master/Enemigo1.cpp
+1432321045 source:/home/ricardo/Documentos/Progra3/Shooter-master/Enemigo1.cpp
 	"Enemigo1.h"
 
 1432246040 /home/ricardo/Documentos/Progra3/Shooter-master/Enemigo1.h
 	"Personaje.h"
 
-1432266124 source:/home/ricardo/Documentos/Progra3/Shooter-master/Enemigo2.cpp
+1432321045 source:/home/ricardo/Documentos/Progra3/Shooter-master/Enemigo2.cpp
 	"Enemigo2.h"
 
 1432246040 /home/ricardo/Documentos/Progra3/Shooter-master/Enemigo2.h
 	"Personaje.h"
 
-1432266124 source:/home/ricardo/Documentos/Progra3/Shooter-master/Enemigo3.cpp
+1432321045 source:/home/ricardo/Documentos/Progra3/Shooter-master/Enemigo3.cpp
 	"Enemigo3.h"
 
 1432246040 /home/ricardo/Documentos/Progra3/Shooter-master/Enemigo3.h

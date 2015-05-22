@@ -10,6 +10,7 @@
 #include "Enemigo3.h"
 #include "Enemigo4.h"
 #include "Enemigo5.h"
+#include <SDL2/SDL_mixer.h>
 
 using namespace std;
 
@@ -18,6 +19,7 @@ SDL_Renderer* renderer;
 SDL_Event Event;
 SDL_Texture *background;
 SDL_Rect rect_background;
+Mix_Music *gMusic = NULL;
 
 int main( int argc, char* args[] )
 {
@@ -38,6 +40,21 @@ int main( int argc, char* args[] )
         std::cout << SDL_GetError() << std::endl;
         return 30;
     }
+
+
+                //Initialize SDL_mixer
+                if( Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 ) < 0 )
+                {
+                    printf( "SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError() );
+                    bool success = false;
+                }
+                //Load music
+                gMusic = Mix_LoadMUS( "Deorro - Five Hours (Static Video) [LE7ELS].mp3" );
+                if( gMusic == NULL )
+                {
+                    printf( "Failed to load beat music! SDL_mixer Error: %s\n", Mix_GetError() );
+                    bool success = false;
+                }
 
     //Init textures
     int w=0,h=0;
@@ -82,6 +99,11 @@ int main( int argc, char* args[] )
                 return 0;
             }
         }
+        if( Mix_PlayingMusic() == 0 )
+           {
+                //Play the music
+                Mix_PlayMusic( gMusic, -1 );
+            }
 
         for(list<Personaje*>::iterator i=personajes.begin();
             i!=personajes.end();
